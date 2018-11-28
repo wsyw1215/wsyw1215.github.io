@@ -1,10 +1,162 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>你好，GitHub</title>
-  </head>
-  <body>
-    <h1>覺得厲害</h1>
-  </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引用bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <!--font awsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <!-- 我自己的CSS-->
+    <link rel="stylesheet" href="style/style.css">
+    <title>Miko Blog</title>
+</head>
+
+<body>
+    <!-- 網頁上方的導覽列(navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#ffa114">
+        <a class="navbar-brand" href="#"><i class="fas fa-feather-alt mr-2"></i>Miko</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#">Home</a>
+                <a class="nav-item nav-link" href="#">Blog</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb pl-0">
+                <li class="breadcrumb-item"><a class="text-theme" href="#">Home</a></li>
+                <li class="breadcrumb-item"><a class="text-theme" href="#">Blog</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Miko</li>
+            </ol>
+        </nav>
+        <h1 class="text-theme">Bootstrap 4 繁體中文手冊</h1>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="my-2">
+                    <small class="text-secondary">
+                        <span class="mr-3"><i class="fas fa-user mr-1"></i>Miko</span>
+                        <span class="mr-3">2018/11/28</span>
+                        <span><i class="fas fa-tag mr-1"></i>event</span>
+                    </small>
+                </div>
+                <article>
+                    <p>Bootstrap 是目前最主流的 CSS 框架，由於他包含了大量的元件以及具有良好的架構，在實際運用及擴增也都是非常容易，也越來越多開發者協同一起開發 (Github 上有超過 10 萬個
+                        Star)。如今第四版 Beta (Bootstrap 4 Beta) 也在 2017/8/10 釋出，我們先來看看他有什麼樣的改變吧！</p>
+                    <h2 class="text-secondary">Bootstrap 4 的特色</h2>
+                    <p>Bootstrap 4 Beta 經過了 Alpha 六個版本的歷練，重新翻修了大量元件以及加入許多新的元素，如果你沒有用過 Alpha
+                        的任何版本，提供了以下摘要讓您快速了解第四版有什麼新新聞：</p>
+                    <ul>
+                        <li>從 Less 到 Sass: 自從 Sass 不在只能使用 Ruby 編譯後，Libsass 有更快的編譯效率，加上 Sass 本身具有龐大的開發社群，所以 Bootstrap 從
+                            Less
+                            改用 Sass 囉！</li>
+                        <li>Flexbox 以及強化的網格系統: 網格系統不在使用 <code>float</code>，進而改用<code>flexbox</code>，讓行動裝置及桌面裝置有更彈性的排版方法。</li>
+                        <li>卡片元件: 許多元件本質相似度較高，如 <code>wells</code>、<code>thumbnails</code>、<code>panels</code>
+                            等等，這些元件被捨棄掉，取而代之的則是卡片元件，不僅可以完成上述元件的功能，且運作的更為美好。</li>
+                        <li>彈性更高的變數: 以往的樣式都是固定的名稱、色彩，透過 Sass <code>$map</code> 變數可以更有彈性的調整、新增、減少不同的品牌色彩、陰影等視覺效果。</li>
+                        <li>IE8、IE9 掰掰: 放棄舊有的瀏覽器支持，讓元件的使用及開發上更為容易，如果還是考慮支援 IE8/IE9、 Safari 8-、 iOS 8- 可以繼續使用 Bootstrap
+                            3。</li>
+                        <li>重新設計說明文件: 新的文件重新設計了，並且加入一些插件讓搜尋上更為容易！</li>
+                        <li>更多的改變: 重新設計更多更多的樣式，像是自由套色的導覽列、HTML5 的驗證樣式、嶄新的輪播以及許多的元件</li>
+                    </ul>
+                    <h2 class="text-secondary">繁體中文手冊</h2>
+                    <p>加入了這麼多新功能，如果從頭開始了解原文版本也需要花上不少時間，於是六角學院從兩個月前開始著手翻譯，在正式釋出 Beta 版後的兩個工作日釋出繁體中文手冊，讓對於 Bootstrap
+                        有需求的同學可以加速上手～</p>
+                    <img src="img/bootstrap4.png" class="img-fluid">
+                   
+
+                </article>
+                <div class="card">
+                    <div class="card-header text-white">
+                        留言回覆
+                    </div>
+                    <div class="card-body">
+                        <div class="media mb-4">
+                            <img class="mr-3" src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2011/01/4-ways-cheer-up-depressed-cat.jpg"
+                                width="64" height="64" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Miko</h5>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <button class="btn btn-block btn-warning mt-2">Submit</button>
+                            </div>
+                        </div>
+                        <div class="media mb-4">
+                            <img class="mr-3" src="https://randomuser.me/api/portraits/men/57.jpg" width="64" height="64"
+                                alt="Generic placeholder image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Media heading</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+                                condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                <div><small class="text-secondary">about 8 hours ago</small></div>
+                            </div>
+                        </div>
+                        <div class="media mb-4">
+                            <img class="mr-3" src="https://randomuser.me/api/portraits/women/21.jpg" width="64" height="64"
+                                alt="Generic placeholder image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Media heading</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+                                condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                <div><small class="text-secondary">about 14 hours ago</small></div>
+                            </div>
+                        </div>
+                        <div class="media mb-4">
+                            <img class="mr-3" src="https://randomuser.me/api/portraits/women/66.jpg" width="64" height="64"
+                                alt="Generic placeholder image">
+                            <div class="media-body">
+                                <h5 class="mt-0">Media heading</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+                                condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                <div><small class="text-secondary">about 16 hours ago</small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h2 class="text-secondary">Tags</h2>
+                <span class="badge badge-warning text-white"><i class="fas fa-tag mr-1"></i>infor</span>
+                <span class="badge badge-warning text-white"><i class="fas fa-tag mr-1"></i>Bootstrap</span>
+                <span class="badge badge-warning text-white"><i class="fas fa-tag mr-1"></i>front-end</span>
+                <span class="badge badge-warning text-white"><i class="fas fa-tag mr-1"></i>CSS</span>
+                <span class="badge badge-warning text-white"><i class="fas fa-tag mr-1"></i>SCSS</span>
+            </div>
+        </div>
+
+    </div>
+    <footer class="py-4 mt-3 bg-theme">
+        <div class="container d-flex justify-content-between">
+            <div class="text-white">© Copyright 2018 Miko大冒險</div>
+            <div>
+                <a href="#"><i class="fab fa-facebook-square text-white mr-1"></i></a>
+                <a href="#"><i class="fab fa-twitter-square text-white mr-1"></i></a>
+                <a href="#"><i class="fab fa-instagram text-white mr-1"></i></a>
+            </div>
+
+
+        </div>
+    </footer>
+    <!--引用bootstrap js/JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
