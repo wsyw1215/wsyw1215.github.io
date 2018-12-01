@@ -28,4 +28,10 @@
   width: 40% !important;
   left: 30% !important;
 }
+
+@media (max-width: 395px) {
+  .font-sd-3 {
+    font-size: 30px !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -25,3 +25,9 @@
     width: 40% !important;
     left: 30% !important;
 }
+// 響應式標題處理
+@media (max-width: 395px) { 
+    .font-sd-3{
+        font-size: 30px !important;
+    }
+}
