@@ -115,3 +115,15 @@ $circle-color:#353636;
 .main-timeline9 .year{margin-bottom:15px}
 .main-timeline9 .description{text-align:center}
 }
+
+
+.title {
+    opacity: 0;
+  }
+  
+.description {
+    opacity: 0;
+  }
+.progress-bar{
+    transition: width 1s ease;
+}

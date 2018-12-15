@@ -412,4 +412,17 @@ a:hover {
     text-align: center;
   }
 }
+
+.title {
+  opacity: 0;
+}
+
+.description {
+  opacity: 0;
+}
+
+.progress-bar {
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+}
 /*# sourceMappingURL=style.css.map */
