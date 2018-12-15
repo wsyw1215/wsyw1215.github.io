@@ -1,3 +1,4 @@
+@import "Timeline";
 .nav-backgroundColor{
     background: #04000a;
 }
@@ -34,3 +35,17 @@
 .Shadow{
     box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.3);
 }
+a:hover{
+    text-decoration: none !important;
+}
+.a-text{ 
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    height:60px;
+    width:60px;
+    .backicon{
+        font-size: 40px;
+    }
+}
+
