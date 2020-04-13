@@ -1,433 +1,623 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>個人履歷</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style/style.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- navbar -->
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark nav-backgroundColor">
-            <a class="navbar-brand" href="#"><i class="fas fa-feather-alt mr-2"></i>Ning</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" id="home-btn" href="#">首頁</a>
-                    <a class="nav-item nav-link" id="intro-btn" href="#intro">自我介紹</a>
-                    <a class="nav-item nav-link" id="exp-btn" href="#exp">經歷</a>
-                    <a class="nav-item nav-link" id="skill-btn" href="#skill">技能</a>
-                    <a class="nav-item nav-link" id="works-btn" href="#works">作品</a>
-
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark nav-backgroundColor">
+        <a class="navbar-brand" href="#"
+          ><i class="fas fa-feather-alt mr-2"></i>Ning</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" id="home-btn" href="#">首頁</a>
+            <a class="nav-item nav-link" id="intro-btn" href="#intro"
+              >自我介紹</a
+            >
+            <a class="nav-item nav-link" id="exp-btn" href="#exp">經歷</a>
+            <a class="nav-item nav-link" id="skill-btn" href="#skill">技能</a>
+            <a class="nav-item nav-link" id="works-btn" href="#works">作品</a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- 輪播 -->
     <section>
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li class="custom-Carousel-li" data-target="#carouselExampleIndicators" data-slide-to="0"
-                    class="active"></li>
-                <li class="custom-Carousel-li" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li class="custom-Carousel-li" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active bg-cover"
-                    style="height:450px; background-image:url(https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cea32ac97f8ffde3f76df4a646ac8b4d&auto=format&fit=crop&w=1050&q=80)">
-                    <div class="alpha-bg">
-                    </div>
-                    <div class="carousel-caption d-block">
-                        <h1 class="font-sd-3">Ning Resume</h1>
-                    </div>
-                </div>
-                <div class="carousel-item bg-cover"
-                    style="height:450px; background-image:url(https://images.unsplash.com/12/till-the-cows-come-home.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4bbba2435147e3e982187821e873b276&auto=format&fit=crop&w=1050&q=80)">
-                    <div class="alpha-bg"></div>
-                    <div class="carousel-caption d-block">
-                        <h1 class="font-sd-3">Ning Resume</h1>
-                    </div>
-                </div>
-                <div class="carousel-item bg-cover"
-                    style="height: 450px; background-image: url(https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3de8a9265d3a8fe2960c812545c78327&auto=format&fit=crop&w=1051&q=80)">
-                    <div class="alpha-bg"></div>
-                    <div class="carousel-caption d-block">
-                        <h1 class="font-sd-3">Ning Resume</h1>
-                    </div>
-                </div>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide carousel-fade"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            class="custom-Carousel-li"
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li
+            class="custom-Carousel-li"
+            data-target="#carouselExampleIndicators"
+            data-slide-to="1"
+          ></li>
+          <li
+            class="custom-Carousel-li"
+            data-target="#carouselExampleIndicators"
+            data-slide-to="2"
+          ></li>
+        </ol>
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active bg-cover"
+            style="
+              height: 450px;
+              background-image: url(https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cea32ac97f8ffde3f76df4a646ac8b4d&auto=format&fit=crop&w=1050&q=80);
+            "
+          >
+            <div class="alpha-bg"></div>
+            <div class="carousel-caption d-block">
+              <h1 class="font-sd-3">Ning Resume</h1>
             </div>
-            <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          </div>
+          <div
+            class="carousel-item bg-cover"
+            style="
+              height: 450px;
+              background-image: url(https://images.unsplash.com/12/till-the-cows-come-home.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4bbba2435147e3e982187821e873b276&auto=format&fit=crop&w=1050&q=80);
+            "
+          >
+            <div class="alpha-bg"></div>
+            <div class="carousel-caption d-block">
+              <h1 class="font-sd-3">Ning Resume</h1>
+            </div>
+          </div>
+          <div
+            class="carousel-item bg-cover"
+            style="
+              height: 450px;
+              background-image: url(https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3de8a9265d3a8fe2960c812545c78327&auto=format&fit=crop&w=1051&q=80);
+            "
+          >
+            <div class="alpha-bg"></div>
+            <div class="carousel-caption d-block">
+              <h1 class="font-sd-3">Ning Resume</h1>
+            </div>
+          </div>
+        </div>
+        <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span aria-hidden="true"><i class="fas fa-caret-left fa-2x"></i></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                     <span aria-hidden="true"><i class="fas fa-caret-right fa-2x"></i></span>
                     <span class="sr-only">Next</span> -->
-            <!-- </a> -->
-        </div>
-
+        <!-- </a> -->
+      </div>
     </section>
     <!-- 自我介紹 -->
     <section>
-        <div class="container py-5" id="intro">
-            <div class="text-center mb-5">
-                <h3 class="mb-1">自我介紹</h3>
-                <img src="img/divider.png" style="width:280px;">
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="img/me.jpg" class="w-100 h-100" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="row">
-                                    <div class="col-10">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <th>姓名</th>
-                                                    <td>陳奕凝</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>性別</th>
-                                                    <td>女</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>生日</th>
-                                                    <td>02/07</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>學歷</th>
-                                                    <td>東海大學資工系</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>愛好</th>
-                                                    <td>旅遊</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Email</th>
-                                                    <td>eileen19930207@gamil.com</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container py-5" id="intro">
+        <div class="text-center mb-5">
+          <h3 class="mb-1">自我介紹</h3>
+          <img src="img/divider.png" style="width: 280px;" />
         </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="img/me.jpg" class="w-100 h-100" alt="" />
+                </div>
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-10">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <th>姓名</th>
+                            <td>陳奕凝</td>
+                          </tr>
+                          <tr>
+                            <th>性別</th>
+                            <td>女</td>
+                          </tr>
+                          <tr>
+                            <th>生日</th>
+                            <td>02/07</td>
+                          </tr>
+                          <tr>
+                            <th>學歷</th>
+                            <td>東海大學資工系</td>
+                          </tr>
+                          <tr>
+                            <th>愛好</th>
+                            <td>旅遊</td>
+                          </tr>
+                          <tr>
+                            <th>Email</th>
+                            <td>eileen19930207@gamil.com</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- 履歷 -->
     <section>
-        <div class="container py-5" id="exp">
-            <div class="text-center mb-5">
-                <h3 class="mb-1">經歷</h3>
-                <img src="img/divider.png" style="width:280px;">
-            </div>
-            <div class="timeline-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="main-timeline9">
-                                <div class="timeline">
-                                    <div class="timeline-content">
-                                        <div class="circle"><span><i class="fas fa-briefcase"></i></span></div>
-                                        <div class="content">
-                                            <span class="year">2019/03-2020/03</span>
-                                            <h4 class="title">雋上科技 前端工程師</h4>
-                                            <p class="description">
-                                                參與前端平台維護、新功能實作與自動化測試、API串接
-                                            </p>
-                                            <div class="icon"><span></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="timeline">
-                                    <div class="timeline-content">
-                                        <div class="circle"><span><i class="fas fa-briefcase"></i></span></div>
-                                        <div class="content">
-                                            <span class="year">2017/04-2018/08</span>
-                                            <h4 class="title">網銀國際 研發部專員</h4>
-                                            <p class="description">
-                                                參與VR專案的開發，擔任專案主程式，負責UI、Client端、AI等遊戲功能撰寫。
-                                            </p>
-                                            <div class="icon"><span></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="timeline">
-                                    <div class="timeline-content">
-                                        <div class="circle"><span><i class="fas fa-briefcase"></i></span></div>
-                                        <div class="content">
-                                            <span class="year">2016/09-2017/04</span>
-                                            <h4 class="title">網銀國際 VR實習生</h4>
-                                            <p class="description">
-                                                參與VR技術的研究與開發，從中學習實務開發經驗、了解程式架構的重要性，學習如何更好的將學校所學結合至實務當中與解決問題的能力。
-                                            </p>
-                                            <div class="icon"><span></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="timeline">
-                                    <div class="timeline-content">
-                                        <div class="circle"><span><i class="fas fa-trophy"></i></span></div>
-                                        <div class="content">
-                                            <span class="year">2016/8/26-28</span>
-                                            <h4 class="title">參與VR Hack Fest / VR</h4>
-                                            <p class="description">
-                                                開發者黑客松大賽，抱持著學習與拓展視野的態度，曾至其他組別學習交流，學習開發專案的流程與規劃
-                                            </p>
-                                            <div class="icon"><span></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="timeline">
-                                    <div class="timeline-content">
-                                        <div class="circle"><span><i class="fas fa-user"></i></span></div>
-                                        <div class="content">
-                                            <span class="year">2014/01-2017/06</span>
-                                            <h4 class="title">班級代表</h4>
-                                            <p class="description">
-                                                協助系上並處理各項班級事務，藉由此職務學習如何與人交流，溝通協調的能力，更加強自己的責任感與自信心。
-                                            </p>
-                                            <div class="icon"><span></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="timeline">
-                                    <div class="timeline-content">
-                                        <div class="circle"><span><i class="fab fa-java"></i></span></div>
-                                        <div class="content">
-                                            <span class="year">2015/09-2017/06</span>
-                                            <h4 class="title">Java與C程式設計助教</h4>
-                                            <p class="description">
-                                                落實學校程式設計培育，協助指導學弟妹學習程式語言，讓所學更加熟練，提升個人的競爭力與人際相處的能力。
-                                            </p>
-                                            <div class="icon"><span></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="timeline">
-                                    <div class="timeline-content">
-                                        <div class="circle"><span><i class="fas fa-user"></i></span></div>
-                                        <div class="content">
-                                            <span class="year">2014/01-2015/06</span>
-                                            <h4 class="title">系學會副會長</h4>
-                                            <p class="description">
-                                                與團隊共同策劃系上各種活動，讓我學習到與人合作及溝通協調，以及寶貴的團隊分工與合作的精神。
-                                            </p>
-                                            <div class="icon"><span></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
+      <div class="container py-5" id="exp">
+        <div class="text-center mb-5">
+          <h3 class="mb-1">經歷</h3>
+          <img src="img/divider.png" style="width: 280px;" />
         </div>
-
+        <div class="timeline-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="main-timeline9">
+                  <div class="timeline">
+                    <div class="timeline-content">
+                      <div class="circle">
+                        <span><i class="fas fa-briefcase"></i></span>
+                      </div>
+                      <div class="content">
+                        <span class="year">2019/03-2020/03</span>
+                        <h4 class="title">雋上科技 前端工程師</h4>
+                        <p class="description">
+                          參與前端平台維護、新功能實作與自動化測試、API串接
+                        </p>
+                        <div class="icon"><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="timeline">
+                    <div class="timeline-content">
+                      <div class="circle">
+                        <span><i class="fas fa-briefcase"></i></span>
+                      </div>
+                      <div class="content">
+                        <span class="year">2017/04-2018/08</span>
+                        <h4 class="title">網銀國際 研發部專員</h4>
+                        <p class="description">
+                          參與VR專案的開發，擔任專案主程式，負責UI、Client端、AI等遊戲功能撰寫。
+                        </p>
+                        <div class="icon"><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="timeline">
+                    <div class="timeline-content">
+                      <div class="circle">
+                        <span><i class="fas fa-briefcase"></i></span>
+                      </div>
+                      <div class="content">
+                        <span class="year">2016/09-2017/04</span>
+                        <h4 class="title">網銀國際 VR實習生</h4>
+                        <p class="description">
+                          參與VR技術的研究與開發，從中學習實務開發經驗、了解程式架構的重要性，學習如何更好的將學校所學結合至實務當中與解決問題的能力。
+                        </p>
+                        <div class="icon"><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="timeline">
+                    <div class="timeline-content">
+                      <div class="circle">
+                        <span><i class="fas fa-trophy"></i></span>
+                      </div>
+                      <div class="content">
+                        <span class="year">2016/8/26-28</span>
+                        <h4 class="title">參與VR Hack Fest / VR</h4>
+                        <p class="description">
+                          開發者黑客松大賽，抱持著學習與拓展視野的態度，曾至其他組別學習交流，學習開發專案的流程與規劃
+                        </p>
+                        <div class="icon"><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="timeline">
+                    <div class="timeline-content">
+                      <div class="circle">
+                        <span><i class="fas fa-user"></i></span>
+                      </div>
+                      <div class="content">
+                        <span class="year">2014/01-2017/06</span>
+                        <h4 class="title">班級代表</h4>
+                        <p class="description">
+                          協助系上並處理各項班級事務，藉由此職務學習如何與人交流，溝通協調的能力，更加強自己的責任感與自信心。
+                        </p>
+                        <div class="icon"><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="timeline">
+                    <div class="timeline-content">
+                      <div class="circle">
+                        <span><i class="fab fa-java"></i></span>
+                      </div>
+                      <div class="content">
+                        <span class="year">2015/09-2017/06</span>
+                        <h4 class="title">Java與C程式設計助教</h4>
+                        <p class="description">
+                          落實學校程式設計培育，協助指導學弟妹學習程式語言，讓所學更加熟練，提升個人的競爭力與人際相處的能力。
+                        </p>
+                        <div class="icon"><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="timeline">
+                    <div class="timeline-content">
+                      <div class="circle">
+                        <span><i class="fas fa-user"></i></span>
+                      </div>
+                      <div class="content">
+                        <span class="year">2014/01-2015/06</span>
+                        <h4 class="title">系學會副會長</h4>
+                        <p class="description">
+                          與團隊共同策劃系上各種活動，讓我學習到與人合作及溝通協調，以及寶貴的團隊分工與合作的精神。
+                        </p>
+                        <div class="icon"><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
     </section>
     <!-- 技能 -->
     <section>
-        <div class="container" id="skill">
-            <div class="text-center mb-5">
-                <h3 class="mb-1">技能</h3>
-                <img src="img/divider.png" style="width:280px;">
-            </div>
-            <div>
-                <div class="mb-4 row">
-                    <div class="mr-3 h5 col-md-1" style="width: 9%">React</div>
-                    <div class="h-100 w-100 col-md-10">
-                        <div class="progress" style="height: 24px;">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" data-progress="80"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-4 row">
-                    <div class="mr-3 h5 col-md-1" style="width: 9%">Vue</div>
-                    <div class="h-100 w-100 col-md-10">
-                        <div class="progress" style="height: 24px;">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" data-progress="80"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-4 row">
-                    <div class="mr-3 h5 col-md-1">HTML/CSS</div>
-                    <div class="h-100 w-100 col-md-10">
-                        <div class="progress" style="height: 24px;">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" data-progress="90"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-4 row">
-                    <div class="mr-3 h5 col-md-1">Bootstrap</div>
-                    <div class="h-100 w-100 col-md-10">
-                        <div class="progress" style="height: 24px;">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" data-progress="85"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-4 row">
-                    <div class="mr-3 h5 col-md-1" style="width: 9%">Git</div>
-                    <div class="h-100 w-100 col-md-10">
-                        <div class="progress" style="height: 24px;">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" data-progress="85"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-4 row">
-                    <div class="mr-3 h5 col-md-1" style="width: 9%">JavaScript</div>
-                    <div class="h-100 w-100 col-md-10">
-                        <div class="progress" style="height: 24px;">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" data-progress="90"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-4 row">
-                    <div class="mr-3 h5 col-md-1" style="width: 9%">JQuery</div>
-                    <div class="h-100 w-100 col-md-10">
-                        <div class="progress" style="height: 24px;">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" data-progress="80"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-4 row">
-                    <div class="mr-3 h5 col-md-1" style="width: 9%">RWD</div>
-                    <div class="h-100 w-100 col-md-10">
-                        <div class="progress" style="height: 24px;">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" data-progress="80"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mb-4 row">
-                    <div class="mr-3 h5 col-md-1" style="width: 9%">SASS</div>
-                    <div class="h-100 w-100 col-md-10">
-                        <div class="progress" style="height: 24px;">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" data-progress="70"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mb-4 row">
-                    <div class="mr-3 h5 col-md-1" style="width: 9%">Node.js</div>
-                    <div class="h-100 w-100 col-md-10">
-                        <div class="progress" style="height: 24px;">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" data-progress="60"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-4 row">
-                    <div class="mr-3 h5 col-md-1" style="width: 9%">Python</div>
-                    <div class="h-100 w-100 col-md-10">
-                        <div class="progress" style="height: 24px;">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" data-progress="60"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container" id="skill">
+        <div class="text-center mb-5">
+          <h3 class="mb-1">技能</h3>
+          <img src="img/divider.png" style="width: 280px;" />
         </div>
+        <div>
+          <div class="mb-4 row">
+            <div class="mr-3 h5 col-md-1" style="width: 9%;">React</div>
+            <div class="h-100 w-100 col-md-10">
+              <div class="progress" style="height: 24px;">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 0%;"
+                  data-progress="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4 row">
+            <div class="mr-3 h5 col-md-1" style="width: 9%;">Vue</div>
+            <div class="h-100 w-100 col-md-10">
+              <div class="progress" style="height: 24px;">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 0%;"
+                  data-progress="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4 row">
+            <div class="mr-3 h5 col-md-1">HTML/CSS</div>
+            <div class="h-100 w-100 col-md-10">
+              <div class="progress" style="height: 24px;">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 0%;"
+                  data-progress="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4 row">
+            <div class="mr-3 h5 col-md-1">Bootstrap</div>
+            <div class="h-100 w-100 col-md-10">
+              <div class="progress" style="height: 24px;">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 0%;"
+                  data-progress="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4 row">
+            <div class="mr-3 h5 col-md-1" style="width: 9%;">Git</div>
+            <div class="h-100 w-100 col-md-10">
+              <div class="progress" style="height: 24px;">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 0%;"
+                  data-progress="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4 row">
+            <div class="mr-3 h5 col-md-1" style="width: 9%;">JavaScript</div>
+            <div class="h-100 w-100 col-md-10">
+              <div class="progress" style="height: 24px;">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 0%;"
+                  data-progress="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4 row">
+            <div class="mr-3 h5 col-md-1" style="width: 9%;">JQuery</div>
+            <div class="h-100 w-100 col-md-10">
+              <div class="progress" style="height: 24px;">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 0%;"
+                  data-progress="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4 row">
+            <div class="mr-3 h5 col-md-1" style="width: 9%;">RWD</div>
+            <div class="h-100 w-100 col-md-10">
+              <div class="progress" style="height: 24px;">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 0%;"
+                  data-progress="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-4 row">
+            <div class="mr-3 h5 col-md-1" style="width: 9%;">SASS</div>
+            <div class="h-100 w-100 col-md-10">
+              <div class="progress" style="height: 24px;">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 0%;"
+                  data-progress="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-4 row">
+            <div class="mr-3 h5 col-md-1" style="width: 9%;">Node.js</div>
+            <div class="h-100 w-100 col-md-10">
+              <div class="progress" style="height: 24px;">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 0%;"
+                  data-progress="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4 row">
+            <div class="mr-3 h5 col-md-1" style="width: 9%;">Python</div>
+            <div class="h-100 w-100 col-md-10">
+              <div class="progress" style="height: 24px;">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 0%;"
+                  data-progress="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- 作品 -->
     <section class="container-fluid bg-light py-5" id="works">
-        <div class="text-center">
-            <h3 class="mb-1">網頁作品集</h3>
-            <img src="img/divider.png" style="width:280px;">
-            <div class="py-4">
-                <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-                    <li class="nav-item mx-2 mb-2">
-                        <a class="nav-link border border-primary active" id="pills-bs-tab" data-toggle="pill"
-                            href="#pills-bs" role="tab" aria-controls="pills-bs" aria-selected="false">React</a>
-                    </li>
-                    <li class="nav-item mx-2 mb-2">
-                        <a class="nav-link border border-primary" id="pills-vue-tab" data-toggle="pill"
-                            href="#pills-vue" role="tab" aria-controls="pills-vue" aria-selected="false">Vue.js</a>
-                    </li>
-                </ul>
-                <div class="tab-content py-4" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-bs" role="tabpanel" aria-labelledby="pills-bs-tab">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-md-4 pb-5">
-                                    <a href="https://crown-clothing-live-eilee2.herokuapp.com/" target="_blank">
-                                        <img src="img/crown.png" class="Shadow" style="width: 90%; height:200px;"
-                                            alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-vue" role="tabpanel" aria-labelledby="pills-vue-tab">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-md-4 pb-3">
-                                    <a href="https://wsyw1215.github.io/shoppingManager/#/login">
-                                        <img src="img/shoppingCartManager.PNG" class="Shadow"
-                                            style="width: 90%; height:200px;" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="text-center">
+        <h3 class="mb-1">網頁作品集</h3>
+        <img src="img/divider.png" style="width: 280px;" />
+        <div class="py-4">
+          <ul
+            class="nav nav-pills mb-3 justify-content-center"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item mx-2 mb-2">
+              <a
+                class="nav-link border border-primary active"
+                id="pills-bs-tab"
+                data-toggle="pill"
+                href="#pills-bs"
+                role="tab"
+                aria-controls="pills-bs"
+                aria-selected="false"
+                >React</a
+              >
+            </li>
+            <li class="nav-item mx-2 mb-2">
+              <a
+                class="nav-link border border-primary"
+                id="pills-vue-tab"
+                data-toggle="pill"
+                href="#pills-vue"
+                role="tab"
+                aria-controls="pills-vue"
+                aria-selected="false"
+                >Vue.js</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content py-4" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-bs"
+              role="tabpanel"
+              aria-labelledby="pills-bs-tab"
+            >
+              <div class="container">
+                <div class="row justify-content-start">
+                  <div class="col-md-4 pb-5">
+                    <a
+                      href="https://crown-clothing-live-eilee2.herokuapp.com/"
+                      target="_blank"
+                    >
+                      <img
+                        src="img/crown.png"
+                        class="Shadow"
+                        style="width: 90%; height: 200px;"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-4 pb-5">
+                    <a
+                      href="https://powerful-hamlet-83252.herokuapp.com/"
+                      target="_blank"
+                    >
+                      <img
+                        src="img/color-platette.png"
+                        class="Shadow"
+                        style="width: 90%; height: 200px;"
+                        alt=""
+                      />
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
+            <div
+              class="tab-pane fade"
+              id="pills-vue"
+              role="tabpanel"
+              aria-labelledby="pills-vue-tab"
+            >
+              <div class="container">
+                <div class="row justify-content-start">
+                  <div class="col-md-4 pb-3">
+                    <a
+                      href="https://wsyw1215.github.io/shoppingManager/#/login"
+                    >
+                      <img
+                        src="img/shoppingCartManager.PNG"
+                        class="Shadow"
+                        style="width: 90%; height: 200px;"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+      </div>
     </section>
 
     <!-- 返回頂端 -->
     <a href="#" class="a-text btn btn-secondary rounded-circle">
-        <div class=" backicon d-flex  justify-content-center">
-            <i class="fas fa-arrow-up align-self-center text-white"></i>
-        </div>
+      <div class="backicon d-flex justify-content-center">
+        <i class="fas fa-arrow-up align-self-center text-white"></i>
+      </div>
     </a>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
-    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
     <!-- JS載入 -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
